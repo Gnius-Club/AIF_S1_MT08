@@ -1,24 +1,296 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 8: Uniendo Piezas con Secuenciación IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 8: Uniendo Piezas con Secuenciación IA</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes aprendan a crear un 'Ensamblaje' (Assembly) en Onshape.</li>
+                                        <li>Que aprendan a utilizar la relación de unión 'Fijar' (Fastened Mate).</li>
+                                        <li>Que comprendan cómo la IA puede optimizar secuencias de montaje (Path Planning) para la automatización.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un ensamblaje digital funcional en Onshape con sus piezas fijas mediante 'Fastened Mates'.</li>
+                                        <li>Una sección en su brief de diseño que documenta el "plan de ensamblaje" conceptual generado por Xolo.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Cuentas de Onshape para cada alumno.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar que todos los sistemas (Internet, Onshape, Xolo) están operativos.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Entender claramente la diferencia entre el entorno 'Part Studio' y 'Assembly' en Onshape, y cómo funciona el 'Fastened Mate'.</li>
+                                        <li><strong>Preparación de Ejemplos:</strong> Tener un ensamblaje simple ya creado en Onshape para demostrar visualmente cómo se insertan las piezas y cómo se aplica un 'Fastened Mate' para unirlas.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Introducir la sesión como la transición de diseñar piezas aisladas a construir sistemas integrados.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador presenta el concepto de 'Ensamblaje' y el rol de la IA en la automatización.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Saludos, ingenieros de sistemas. Hasta ahora, han diseñado piezas en un Part Studio; eran cuerpos independientes. Hoy, las llevaremos a un nuevo entorno, el 'Ensamblaje', donde las piezas se convierten en componentes y aprenden a relacionarse entre sí. Y exploraremos cómo la IA está revolucionando la forma en que los robots construyen cosas en el mundo real.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Procedan con el inicio de sesión: 'Hola Xolo, listo para la Misión 8', seguido de su nombre, perfil y gustos. Esperen su confirmación para comenzar a ensamblar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
+                <p>Presentar la diferencia entre Part Studio y Assembly, y el desafío de la planificación de secuencias de montaje.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentando Ensamblajes y Planificación ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce los 'Mates' y la importancia del orden en el ensamblaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Un Part Studio es donde se 'esculpen' las piezas. Un 'Ensamblaje' es donde se 'construye' con ellas, uniéndolas con 'Mates' o relaciones de unión. Hoy usaremos 'Fastened' para fijarlas. Pero el orden importa. Como en un manual de IKEA, montar C antes que B puede ser un error. La IA calcula el 'plan de ensamblaje' óptimo. Su misión es crear un ensamblaje simple y, con la ayuda de Xolo, generar ese plan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El objetivo de hoy es claro. Al final, podrán decir: <strong>'Yo puedo crear un ensamblaje básico en Onshape usando la relación 'Fastened' y entiendo cómo la IA puede generar una secuencia de montaje óptima para un proceso de automatización.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (IA en Robótica y Automatización) ⏰ 12 minutos</h2>
+                <p>Fase de diálogo con Xolo para entender la planificación de secuencias (Path Planning) y cómo la IA genera un plan de ensamblaje.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Problema del Ensamblaje Robótico ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Los estudiantes consultan a Xolo sobre su rol como 'asistente de robótica' y los desafíos del Path Planning.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Vamos al A.I. GYM. Hoy Xolo simula ser un 'asistente de robótica', especialista en Planificación de Secuencias o Path Planning. Para entender su rol, consúltenle: <strong>'Xolo, explícame qué es el Path Planning y por qué el orden de ensamblaje es un problema complejo para un robot.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: La Simulación del Plan de Ensamblaje ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador explica cómo Xolo generará un plan conceptual de ensamblaje una vez que el modelo esté listo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Una vez que tengan su ensamblaje, se lo describirán a Xolo. Él analizará la geometría y generará un 'Plan de Ensamblaje' conceptual, como lo haría para un robot. Por ejemplo: 1. Fijar Componente [Base] al origen. 2. Mover [Brazo Izquierdo] y aplicar Mate Fastened a [Base]. Este plan no es una simple lista, es un algoritmo que un robot podría ejecutar. Su tarea es obtener y documentar este plan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Creación del Ensamblaje y Planificación) ⏰ 15 minutos</h2>
+                <p>Fase de trabajo práctico donde los estudiantes crean un ensamblaje básico y obtienen el plan de optimización de secuencia de Xolo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Creación y Unión del Ensamblaje ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 7 y 8) Los estudiantes crean el ensamblaje, insertan piezas, fijan la base y aplican 'Fastened Mates'.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Creen una nueva pestaña de 'Assembly'. Usen 'Insert' para traer las piezas de su Part Studio. Fijen una pieza, la base, al origen. Luego, usando el ciclo de consulta, aprendan y apliquen 'Fastened Mates' para unir las piezas estáticas de su mecanismo en su posición final.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Diálogo y Generación del Plan ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Los estudiantes describen su ensamblaje a Xolo y documentan el plan generado.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Cuando su ensamblaje esté unido, describánselo a Xolo. Por ejemplo: **"He creado mi ensamblaje. La base está fija, y el brazo y un soporte están unidos a ella con mates 'Fastened'."** Xolo les responderá con el plan de ensamblaje optimizado y la razón de esa optimización. Documenten este plan en su brief.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p>Fase final para compartir los planes de ensamblaje y reflexionar sobre el pensamiento secuencial y la optimización.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador guía una reflexión sobre la eficiencia de la secuencia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     Tiempo. Observen su ensamblaje y el plan de Xolo. Reflexionen: <strong>¿Por qué el orden que sugirió la IA era más eficiente que el orden en que ustedes lo montaron manualmente? ¿En qué otros escenarios de la vida real la planificación de secuencias es crucial?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Discusión en Parejas) ⏰ 2 minutos</h3>
+                            <p>Los estudiantes comparten sus ensamblajes y los planes generados por la IA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    En parejas, compartan sus pantallas. Muestren el ensamblaje y expliquen el "plan" que les generó la IA. Discutan si la lógica de la optimización tiene sentido.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 11) El facilitador consolida la sesión, destacando el paso de diseñador a integrador de sistemas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Han trascendido el diseño de piezas para convertirse en integradores de sistemas. Han creado un ensamblaje, el esqueleto digital de su producto. Y, lo más importante, han utilizado la IA para pensar como un robot, optimizando un proceso para un mundo automatizado. Sus piezas ya no son estáticas; están relacionadas. El siguiente paso es darles el poder de moverse.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
